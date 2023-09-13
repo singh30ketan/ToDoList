@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="icons8-todo-list-100.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="customization.css">
+    <title>Task manager</title>
+</head>
+<body>
+
+    <!--navbar or status bar of website-->
+    <nav>
+        <div class="navigation">
+            <div class="Tm">
+                <p>Task Manager</p>
+            </div>
+            <div class="Time">
+                <p id="currenttime"></p>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Mid section and search element-->
+
+    <section>
+        <div class="midsectionparent">
+
+            <div class="midsubpart2">
+                <div class="Its">
+                    <p class="late"><span class="I">I</span><span class="T">t'</span>s never too late</p>
+                </div>
+                <div class="Add">
+                    <p class="task">Add your task now</p>
+                </div>
+                <div class="EnterTask">
+                    <div class="Enter">
+                        <input id="task-title" type="text" class="entertext" placeholder="Enter your task here">
+                        <button type="submit" id="Add-task"><img src="Icons/icons8-add-button-78.png"></button>
+                    </div>
+                   <div class="taskicon">
+                    <div class="dateparent">
+                        <input id="due-date" type="date">
+                    </div>
+                    <div class="dropdown">
+                        <select id="category">
+                            <option value="business">Business</option>
+                            <option value="personal">Personal</option>
+                        </select>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <video playsinline autoplay muted loop poster="production_id_4779866 (1080p).mp4">
+            <source src="production_id_4779866 (1080p).mp4" type="video/mp4">
+            
+        </div>
+    </section>
+
+
+    <main>
+        <div class="maindiv">
+            <div class="maindiv1">
+                <div class="YourTask">
+                    <p>Your Tasks</p>
+                </div>
+
+                <div class="submaindiv1">
+
+                    <div class="searchbar">
+                        <input type="text" class="searchbarinput" placeholder="Seach Task">
+                        <button class="searchIcon" type="submit"><img src="Icons/baseline_search_black_24dp.png"></button>
+                    </div>
+
+
+                   <div class="icon__parent">
+                    <div class="dropdown">
+                        <!-- <button>Sort By</button>
+                        <div class="dropdown-content">
+                            <p>Name(A-Z)</p>
+                            <p>Name(Z-A)</p>
+                        </div> -->
+                        <!-- <select id="Sort">
+                            <option value="AtoZ">A to Z</option>
+                            <option value="ZtoA">Z to A</option>
+                        </select> -->
+                        <img src="icons8-calendar-4-64.png" class="on" id="paydate">
+                    </div>
+
+                    <div class="dropdown">
+                        <select id="filter">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="incompleted">Uncompleted</option>
+                        </select>
+                    </div>
+                   </div>
+                </div>
+
+            </div>
+            <div class="maindiv2">
+                <div class="parentgrid">
+
+                    <div class="gridchild">
+                        <div class="coldiv1">
+                            <div class="coldiv1-child">
+                                <!-- <img src="Icons/icons8-reminders-50.png" alt=""> -->
+                            </div>
+                            <div class="coldiv1-button">
+                                <div class="dropdown">
+                                    <!-- <button>Edit</button>
+                                    <div class="dropdown-content">
+                                        <p>Completed</p>
+                                        <p>Edit</p>
+                                        <p>Delete</p>
+                                    </div> -->
+                                    <!-- <select id="category">
+                                        <option value="business">business</option>
+                                        <option value="personal">personal</option>
+                                    </select> -->
+
+                                    <img src="icons8-check-25.png" id="img1">
+                                    <img src="icons8-delete-25.png" id="img2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coldiv2">
+                            <p>Business</p>
+                        </div>
+                        <div class="coldiv3">
+                            <p>Hello guys how are you, what </p>
+                        </div>
+                        <div class="coldiv4">
+                            <p>Due Date</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="interact.js"></script>
+</body>
+</html>
